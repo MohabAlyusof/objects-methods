@@ -1,6 +1,9 @@
 const person = {
   firstName: "Tim",
-  age: 28,
+  lastName: "Cook",
+  greet: function(greeting) {
+    return `${greeting.charAt(0).toUpperCase() + greeting.slice(1)}, my name is ${this.firstName}`;
+  }
 }
 
 // Your code here!
